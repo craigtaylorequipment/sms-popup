@@ -1,0 +1,122 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="demo-wrapper">
+
+  <div class="cte-button">Text Us</div>
+
+  <div class="cte-sms-popup">
+    <div class="cte-sms-popup-header">Send Us A Text</div>
+    <div class="cte-sms-popup-body">
+      Add your details and a short message, we&#39ll respond with a text
+      <div class="cte-sms-popup-form">
+        <label>Your Name</label>
+        <input />
+        <label>Your Mobile Number</label>
+        <input />
+        <label>Your Message</label>
+        <textarea></textarea>
+        <div class="cte-button full">Send Text</div>
+        <div class="cte-sms-fineprint">
+          By hitting “Send Text” you authorize Craig Taylor Equipment to send text messages and marketing content to the
+          mobile number provided, sometimes using automated technology. Consent is not a condition of purchase. Message
+          & data rates apply. Text STOP to opt out at any time.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  * {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+
+  .demo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem
+  }
+
+  .cte-logo img {
+    height: 3.5rem;
+  }
+
+  .cte-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    background-color: #be1d25;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 6rem;
+    transition: all 150ms;
+    cursor: pointer;
+  }
+
+  .cte-button:hover {
+    background-color: #891828;
+  }
+
+  .cte-button.full {
+    width: unset;
+    display: block;
+  }
+
+  .cte-sms-popup {
+    width: 20rem;
+  }
+
+  .cte-sms-popup-header {
+    background: #be1d25;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .cte-sms-popup-body {
+    border: 1px solid #222222;
+    border-radius: 0 0 1rem 1rem;
+    border-top: 0px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .cte-sms-popup-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cte-sms-popup-form input,
+  .cte-sms-popup-form textarea {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(34, 34, 34, 0.5);
+    border-radius: 1rem;
+    padding: 0.5rem
+  }
+
+  .cte-sms-popup-form textarea {
+    resize: none;
+  }
+
+  .cte-sms-fineprint {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+</style>
